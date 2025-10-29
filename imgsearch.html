@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search App</title>
+    <style>
+        .apple {
+            height: 150px;
+            width: 150px;
+            border: 1px solid #ccc;
+            visibility: hidden;
+        }
+
+        .mango {
+            height: 150px;
+            width: 150px;
+            border: 1px solid #ccc;
+            visibility: hidden;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 50px;
+            font-family: sans-serif;
+            margin-top: 20px;
+        }
+
+        .sub-intro {
+            text-align: center;
+            font-size: 18px;
+            font-family: sans-serif;
+            color: grey;
+        }
+
+        .input {
+            height: 50px;
+            margin-top: 20px;
+            width: 50%;
+            border: none;
+            border-bottom: 1px solid grey;
+            outline: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .i-section {
+            margin-top: 30px;
+        }
+
+        .btn {
+            height: 50px;
+            width: 13%;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="intro">Image Search App</h1>
+    <p class="sub-intro">Search your desired images at one platform for free</p>
+    <center>
+        <input type="text" id="input" class="input" placeholder="Enter any image name..." /><button class="btn"
+            onclick="search()">Search</button>
+    </center>
+    <div class="i-section">
+        <img src="images/apple.jpg" alt="apple" id="apple" class="apple" title="apple">
+        <img src="images/mango.jpeg" alt="mango" id="mango" class="mango" title="mango">
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
